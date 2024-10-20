@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Contact Us - CampusConnect
+    link(rel="stylesheet", href="/Css/style.css")
+    link(rel="stylesheet", href="/Css/profile.css")
+    link(rel="stylesheet", href="/Css/contact.css")
+  body
+    nav
+      ul.sidebar
+        li(onclick="closeSidebar()")
+          a(href="#")
+            svg(xmlns="http://www.w3.org/2000/svg", height="26px", viewBox="0 -960 960 960", width="26px", fill="#000000")
+              path(d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z")
+        li
+          a(href="/") Home
+        li
+          a(href="/profile") Profile
+        li
+          a(href="/dashboard") Dashboard
+        li
+          a(href="/register") Register
+        li
+          a(href="/login") Login
+        li
+          a(href="/about") About us
+        li
+          a(href="/contact") Contact Us
+      ul
+        li
+          a(href="#") CampusConnect
+        li.hideOnMobile
+          a(href="/") Home
+        li.hideOnMobile
+          a(href="/profile") Profile
+        li.hideOnMobile
+          a(href="/dashboard") Dashboard
+        li.hideOnMobile
+          a(href="/register") Register
+        li.hideOnMobile
+          a(href="/login") Login
+        li.hideOnMobile
+          a(href="/about") About us
+        li.hideOnMobile
+          a(href="/contact") Contact us
+        li(onclick="sidebar()", class="menu")
+          a(href="#")
+            svg(xmlns="http://www.w3.org/2000/svg", height="24px", viewBox="0 -960 960 960", width="24px", fill="#000000")
+              path(d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z")
+
+    .contact-container
+      h2 Contact Us
+      form#contact-form
+        input(type="text", id="name", placeholder="Your Name", required)
+        input(type="email", id="email", placeholder="Your Email", required)
+        textarea(id="message", placeholder="Your Message", required)
+        button(type="submit") Send Message
+
+    footer
+      .footer-news
+        p Stay Connected with CampusConnect Updates
+        form(action="#")
+          input(type="email", placeholder="Enter your email", required)
+          button(type="submit") Subscribe
+        label
+          input(type="checkbox", required) 
+          | I confirm that I am 18 years or older.
+      
+      .footer-links
+        ul
+          li Community
+          li Events
+          li Support
+          li Resources
+          li Extracurriculars
+          li Contact Us
+        select
+          option Select Region
+      
+      .footer-social
+        a(href="#")
+          i(class="fab fa-youtube")
+        a(href="#")
+          i(class="fab fa-pinterest")
+        a(href="#")
+          i(class="fab fa-twitter")
+        a(href="#")
+          i(class="fab fa-instagram")
+        a(href="#")
+          i(class="fab fa-facebook")
+        a(href="#")
+          i(class="fab fa-tiktok")
+      
+      .footer-legal
+        p © 2024 CampusConnect. All Rights Reserved.
+        ul
+          li
+            a(href="#") Terms of Service
+          li
+            a(href="#") Privacy Policy
+          li
+            a(href="#") Accessibility Statement
+          li
+            a(href="#") Code of Conduct
+
+    script(src="js/contact.js")
+    script(src="/js/index.js")
